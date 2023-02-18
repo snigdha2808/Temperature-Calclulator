@@ -1,0 +1,72 @@
+body{
+  background-color: black;
+  padding:50px 100px;
+  color:#fff;
+  background-image: url(1171598.jpg);
+}
+h1{
+  text-align: center;
+  color:#fff;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 50px;
+  text-shadow: 5px;
+
+}
+#container{
+  text-align: center;
+  background-color:#76ACA3;
+  padding:50px;
+
+}
+.input-div{
+  display: inline-block;
+  background-color: #1DABE5;
+  font-size: 30px;
+  font-weight: bold;
+}
+.inp{
+  padding:5px 10px;
+  margin:10px;
+  font-size: 30px;
+  font-weight: bold;
+  width: 250px;
+  text-align:center;
+  background-color: lightyelloW;
+
+
+}
+label{
+  font-size:22px;
+
+}
+.wrapper.four {
+
+    font-size: 3rem;
+    font-family: "Play", sans-serif;
+}
+.four .type{
+    padding: 2rem 1rem;
+    width: auto;
+    margin: auto;
+}
+.four h1 {
+    width: 29ch;
+    border-right: 4px solid black;
+    margin: 2rem auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(23, end), blink-caret 0.5s step-end infinite alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
