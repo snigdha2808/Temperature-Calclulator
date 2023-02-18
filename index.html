@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" charset="utf-8"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="wrapper four">
+      <div class="type">
+        <h1 class="typing">
+            Temperature Calculator
+          </h1>
+      </div>
+    </div>
+
+    <div id="container">
+      <div class="input-div">
+        <label>Celsius</label>
+        <br>
+        <input type="number" name="" value="0" id="cel" class="inp">
+      </div>
+      <div class="input-div">
+        <label>Fahrenheit</label>
+        <br>
+        <input type="number" name="" value="32" id="fah" class="inp">
+      </div>
+    </div>
+    <script>
+      var cel=document.getElementById("cel");
+      var fah=document.getElementById("fah");
+      cel.addEventListener('input',function(){
+        let c=this.value;
+        let f=(c*9/5)+32;
+        if(!Number.isInteger(f)){
+          f=f.toFixed(4);
+        }
+        fah.value=f;
+      });
+      fah.addEventListener('input',function(){
+        let f= this.value;
+        let c=(f-32)*5/9;
+        if(!Number.isInteger(c)){
+          c=c.toFixed(4);
+        }
+        cel.value=c;
+      });
+    </script>
+  </body>
+</html>
